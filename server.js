@@ -27,6 +27,16 @@ res.status(200).json(products)
     }
 })
 
+app.get('/product/:id', async(req,res)=>{
+    const{id}=req.params
+    try{
+       const product= await Product.findById(id)
+       res.status(200).json(product)
+    }catch(error){
+res.status(500).json({message: error.message})
+    }
+
+})
 // add a product 
 app.post('/product',async(req,res)=>{
 try{
