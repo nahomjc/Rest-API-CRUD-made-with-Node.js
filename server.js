@@ -9,7 +9,8 @@ app.get('/',(req ,res)=>{
    res.send('hello Node APi') 
 })
 
-app.use(express.json())
+app.use(express.json())//r
+app.use(express.urlencoded({extended:true}))//Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option
 app.get('/blog',(req,res)=>{
     res.send('hello Blog My is new')
 })
@@ -26,7 +27,32 @@ res.status(200).json(products)
 
     }
 })
+//get product by id
+app.get('/product/:id', async(req,res)=>{
+    const{id}=req.params
+    try{
+       const product= await Product.findById(id)
+       res.status(200).json(product)
+    }catch(error){
+res.status(500).json({message: error.message})
+    }
 
+})
+//update product by id
+
+app.put('/product/:id',async(req,res)=>{
+    const {id}=req.params
+    try{
+        const product = await Product.findByIdAndUpdate(id,req.body)
+        if(!product){
+            res.status(404).json({message:'can not find product'})
+        }
+        const updatedProduct =await Product.findById(id)
+        res.status(200).json(updatedProduct)
+    }catch(error){
+res.status(500).json({message: error.message})
+    }
+})
 // add a product 
 app.post('/product',async(req,res)=>{
 try{
