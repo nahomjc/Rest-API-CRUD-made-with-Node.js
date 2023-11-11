@@ -13,6 +13,8 @@ app.use(express.json())
 app.get('/blog',(req,res)=>{
     res.send('hello Blog My is new')
 })
+
+//get all Products
 app.get('/products',async(req,res)=>{
 
     try{
@@ -24,6 +26,8 @@ res.status(200).json(products)
 
     }
 })
+
+// add a product 
 app.post('/product',async(req,res)=>{
 try{
 const product= await Product.create(req.body)
