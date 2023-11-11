@@ -10,7 +10,7 @@ app.get('/',(req ,res)=>{
 })
 
 app.use(express.json())//r
-app.use(express.urlencoded({extended:true}))//Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option
+app.use(express.urlencoded({extended:false}))//Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option
 app.get('/blog',(req,res)=>{
     res.send('hello Blog My is new')
 })
