@@ -1,14 +1,14 @@
-# REST API CRUD with Node.js and Express 🚀
+# REST API CRUD with Node.js, Express, and MongoDB 🚀
 
-![Image of Node.js and Express logos side-by-side](https://raw.githubusercontent.com/expressjs/express/master/logo/express.png)
+![Image of Node.js, Express, and MongoDB logos side-by-side](https://i.ibb.co/v4z64mK/expressjs-mongodb-nodejs-logos.png)
 
-**Introducing a REST API CRUD Application Built with Node.js and Express**
+**Introducing a REST API CRUD Application Built with Node.js, Express, and MongoDB**
 
-Embark on a journey of building a powerful REST API with CRUD (Create, Read, Update, Delete) functionality using the robust Node.js and Express framework. This project serves as a comprehensive guide to mastering the essentials of REST API development and data management.
+Embark on a journey of building a powerful REST API with CRUD (Create, Read, Update, Delete) functionality using the robust Node.js and Express framework, backed by the NoSQL database MongoDB. This project serves as a comprehensive guide to mastering the essentials of REST API development, data management, and NoSQL database integration.
 
 ## Purpose 🎯
 
-Our primary goal is to provide a practical learning experience through a hands-on project. This REST API CRUD project will equip you with the skills and knowledge necessary to create and interact with REST APIs using Node.js and Express.
+Our primary goal is to provide a practical learning experience through a hands-on project. This REST API CRUD project will equip you with the skills and knowledge necessary to create and interact with REST APIs using Node.js and Express, while leveraging the flexibility and scalability of MongoDB for data storage and retrieval.
 
 ## Features ✨
 
@@ -17,15 +17,17 @@ This project boasts a range of exciting features:
 - Seamless data manipulation through CRUD operations (Create, Read, Update, Delete)
 - RESTful API endpoints for effortless data access
 - Efficient server-side development powered by Node.js and Express framework
+- Utilization of MongoDB NoSQL database for flexible and scalable data storage
 - Adherence to REST API best practices for a well-structured and maintainable API
 
 ## Installation 🔧
 
 To get started, follow these simple steps:
 
-1. **Clone the Repository:** `git clone https://github.com/<your-username>/rest-api-crud-node-js-express.git`
+1. **Clone the Repository:** `git clone https://github.com/<your-username>/rest-api-crud-node-js-express-mongodb.git`
 2. **Install Dependencies:** `npm install`
-3. **Launch the Server:** `npm run dev`
+3. **Configure MongoDB:** Install and configure MongoDB locally or connect to an existing MongoDB instance
+4. **Launch the Server:** `npm run dev`
 
 ## Usage 💻
 
@@ -52,12 +54,13 @@ To enhance your learning experience, we've incorporated interactive elements int
 For those seeking deeper insights, we've compiled a list of helpful resources:
 
 - [Node.js Official Documentation](https://nodejs.org/en/)
-- [Express.js Official Documentation](https://github.com/expressjs/express)
+- [Express.js Official Documentation](https://expressjs.com/)
+- [MongoDB Official Documentation](https://docs.mongodb.com/)
 - [REST API Design Tutorial](https://dev.to/nataliedeweerd/how-to-use-the-dev-to-api-5gl3)
 
 ## Join the Community 🤝
 
-Engage with other developers and enthusiasts by joining online communities dedicated to Node.js and Express development. Share your experiences, ask questions, and collaborate with fellow coders.
+Engage with other developers and enthusiasts by joining online communities dedicated to Node.js, Express, and MongoDB development. Share your experiences, ask questions, and collaborate with fellow coders.
 
 ## Follow REST API Best Practices 📑
 
@@ -72,4 +75,4 @@ To ensure your REST API is well-structured, maintainable, and adheres to industr
 
 ## Conclusion
 
-This REST API CRUD project provides a solid foundation for building robust and scalable REST APIs using Node.js and Express. By following the best practices outlined in this README, you can create well-structured and maintainable APIs that meet the demands of modern applications.
+This REST API CRUD project provides a solid foundation for building robust and scalable REST APIs using Node.js, Express, and MongoDB. By following the best practices outlined in this README, you can create well-structured and maintainable APIs that meet the demands of modern applications, leveraging the power and flexibility of MongoDB for data storage and retrieval.
